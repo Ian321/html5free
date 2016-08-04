@@ -15,15 +15,19 @@ setTimeout(function () {
 			location.reload();
 		}
 	});
-	console.log( "Kappa123" );
 	//localStorage["backend"] = "\"flash\"";
 	//localStorage["backend"] = "\"mse\"";
 	if (localStorage["backend"] == "\"flash\"") {
-		//alert("no");
+		c = "flash";
 	} else if (localStorage["backend"] == "\"mse\"") {
-		//alert("yes");
+		c = "mse";
 	} else {
 		localStorage["backend"] = "\"flash\"";
+		c = "flash";
 	}
 	$( ".html5free" ).removeClass( "js-html5-slider" );
-}, 5555);
+	console.log( "%c↓ [html5free] ↓", "color: darkblue;" );
+	console.log( "ready" );
+	console.log( "current: "+c );
+	console.log( "%c↑ [html5free] ↑", "color: darkblue;" );
+}, 5678);

@@ -27,11 +27,6 @@
         }
     ],
 	"permissions": [
-		"tabs",
-		"activeTab",
-		"browsingData",
-		"cookies",
-		"webRequest",
 		"https://*.twitch.tv/*",
 		"http://*.twitch.tv/*",
 		"https://twitch.tv/*",
