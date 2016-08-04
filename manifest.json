@@ -1,0 +1,40 @@
+{
+"manifest_version": 2,
+    "name": "html5free",
+    "description": "Watch twitch in html5 without turbo.",
+    "version": "1.0",
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+          "matches": [
+      			"https://*.twitch.tv/*",
+      			"http://*.twitch.tv/*",
+      			"https://twitch.tv/*",
+      			"http://twitch.tv/*"
+          ],
+          "css": [
+            "main.css"
+          ],
+      		"js": [
+      			"jquery-3.1.0.min.js",
+      			"main.js"
+      		],
+      		"run_at": "document_idle"
+        }
+    ],
+	"permissions": [
+		"tabs",
+		"activeTab",
+		"browsingData",
+		"cookies",
+		"webRequest",
+		"https://*.twitch.tv/*",
+		"http://*.twitch.tv/*",
+		"https://twitch.tv/*",
+		"http://twitch.tv/*"
+	]
+}

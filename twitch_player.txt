@@ -1,0 +1,6 @@
+Local Storage
+	www.twitch.tv
+		backend
+			"mse" 	= html5
+			"flash"	= flash
+			
