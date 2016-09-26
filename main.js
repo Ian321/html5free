@@ -5,22 +5,20 @@ setTimeout(function () {
 
 	$( ".html5free" ).click(function() {
 		if (localStorage["backend"] == "\"flash\"") {
-			localStorage["backend"] = "\"mse\"";
+			localStorage["backend"] = "\"player-core\"";
 			location.reload();
-		} else if (localStorage["backend"] == "\"mse\"") {
+		} else if (localStorage["backend"] == "\"player-core\"") {
 			localStorage["backend"] = "\"flash\"";
 			location.reload();
 		} else {
-			localStorage["backend"] = "\"mse\"";
+			localStorage["backend"] = "\"player-core\"";
 			location.reload();
 		}
 	});
-	//localStorage["backend"] = "\"flash\"";
-	//localStorage["backend"] = "\"mse\"";
 	if (localStorage["backend"] == "\"flash\"") {
 		c = "flash";
-	} else if (localStorage["backend"] == "\"mse\"") {
-		c = "mse";
+	} else if (localStorage["backend"] == "\"player-core\"") {
+		c = "player-core";
 	} else {
 		localStorage["backend"] = "\"flash\"";
 		c = "flash";
